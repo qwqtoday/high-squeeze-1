@@ -20,6 +20,7 @@ services:
     restart: always
     networks:
       - gitea
+      - caddy
     volumes:
       - ./save/gitea:/data
       - /etc/timezone:/etc/timezone:ro
