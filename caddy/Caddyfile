@@ -1,3 +1,9 @@
+{
+  # Set the ACME DNS challenge provider to use Cloudflare for all sites
+  acme_dns cloudflare {$CLOUDFLARE_API_TOKEN}
+}
+
+
 gitea.catgirl.hk {
     reverse_proxy gitea:3000
 }
